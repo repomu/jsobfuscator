@@ -1,0 +1,82 @@
+@import "semantic.less";
+@import (inline) "~codemirror/lib/codemirror.css";
+@import url('~semantic-ui-less/themes/default/globals/site.variables');
+
+#GithubBadges, #DonateBadges {
+  display: flex;
+
+  @media only screen and (max-width: @largestMobileScreen) {
+    & {
+      justify-content: center;
+    }
+  }
+}
+
+#DonateWallets {
+  word-break: break-all;
+}
+
+.donate-badge {
+  margin-right: 4px;
+}
+
+.CodeMirror {
+  height: 200px;
+}
+
+.DropZone {
+  padding: 1em;
+  height: 200px;
+  border-width: 2px;
+  border-color: #ccc;
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.OptionsForm.ui.form {
+  label {
+    font-size: 0.8em;
+  }
+}
+
+.ui.labels > .label {
+  font-family: monospace;
+}
+
+code {
+  padding: 0.2em;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+
+.evaluatedCode {
+  white-space: pre;
+  padding: 0.2em;
+  background-color: rgba(0, 0, 0, 0.04);
+  overflow: auto;
+  max-height: 200px;
+}
+
+table#Options {
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+img#Logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+.table code {
+  word-break: break-word;
+}
+
+pre#Html {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  & code {
+    width: 100%;
+  }
+}
